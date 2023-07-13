@@ -1,0 +1,497 @@
+html,body {
+  box-sizing: border-box; 
+  overflow: hidden;
+}
+body {
+  width: 100%; height: 100vh;
+  margin: 0; padding: 0;
+}
+
+.scrollp {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll; 
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.scroll {
+  scroll-snap-align: start;
+}
+.scrollp::-webkit-scrollbar {
+  display: none;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 77px;
+}
+a {
+  text-decoration: none;
+}
+.atext {
+  border-radius: 25px;
+  padding: 10px 27px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 16px;
+}
+nav > .logo >img {
+  width: 114px;
+}
+.ui {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ui > div > a {
+  padding: 20px;
+  color: black;
+  font-weight: bold;
+}
+.ui > div > a:hover {
+  text-decoration: underline;
+}
+.ui > .ui4 > a{
+  background-color: #e60023;
+  color: #fff;
+  border-radius: 25px;
+  padding: 9px 10px;
+  margin-left: 35px;
+}
+.ui > .ui4 > a:hover {
+  background-color: #ad081b;
+  text-decoration: none;
+}
+.ui > .ui5 > a {
+  border-radius: 25px;
+  padding: 9px 10px;
+  margin-left: 10px;
+}
+.ui > .ui5 > a:hover{
+  background-color: #dbdbdb;
+  text-decoration: none;}
+
+.sec0 {
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec0main {
+  width: 100%; height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.sec0main p {
+  margin: 0;
+}
+.sec0main > p {
+  padding-top: 250px;
+}
+.tt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  visibility: hidden;
+}
+
+.texts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texts > a{
+  color: gray;
+  position: relative;
+  bottom: -85px;
+  cursor: pointer;
+  scale: 110% ;
+}
+.texts > a >span {
+  scale: 50%;
+}
+.txt1 {
+  color: rgb(194, 139, 0);
+}
+.btn1:hover {
+  color: rgb(194, 139, 0);
+}
+.btn1:hover + .txt1{
+  visibility: visible;
+  animation: fadeInUp 3s ease-in-out infinite;
+}
+
+.txt2 {
+  color: rgb(97, 140, 123);
+}
+.btn2:hover {
+  color: rgb(97, 140, 123);
+}
+.btn2:hover + .txt2 {
+  visibility: visible;
+  animation: fadeInUp 3s ease-in-out infinite;
+}
+
+.txt3 {
+  color: rgb(0, 118, 211);
+}
+.btn3:hover {
+  color: rgb(0, 118, 211);
+}
+.btn3:hover + .txt3 {
+  visibility: visible;
+  animation: fadeInUp 3s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translate3d(-50%, 100%, 0);
+  }
+  50% {
+      opacity: 1;
+      transform: translate3d(-50%, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-50%, -100%, 0);
+  }
+}
+
+.down{
+  height: 60px; width: 100%;
+  background-color:rgb(255, 253, 158);
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  bottom: -232px;
+  padding-bottom: 300px;
+}
+.down > a {
+  color: black;
+  }
+.down > a >p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec1 {
+  width: 100%; height: 100vh;
+  background-color:rgb(255, 253, 158);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.sec1 > .photo {
+  width: 50%;
+  height: 50%;
+  
+}
+.photoimg {
+  width: 500px; height: 500px;
+  min-height: 100%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.photoimg > img {
+  position: absolute;
+  scale: 50%  ;
+}
+.photoimg >img:nth-child(1) {
+  bottom: -175px;
+  right: -30px;
+}
+.photoimg >img:nth-child(2){
+  top: -167px;
+  right: -50px;
+}
+.photoimg >img:nth-child(3) {
+  top: -19px;
+  left: -130px;
+}
+.pt {
+  background-color: white;
+  padding: 10px 0px;
+  font-size: 22px;
+  border-radius: 60px;
+  position: absolute;
+  left: 12%;
+  z-index: 10;
+  color: rgb(110, 15, 60);
+  display: flex;
+  }
+.pt > .material-symbols-outlined {
+  position: absolute;
+  top: 35%;
+  font-weight: bold;
+}
+.pt > p {
+  margin: 7px;
+  max-width: 267px;
+  margin-left: 31px;
+  font-weight: bold;
+}
+.sec1 > .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(195, 25, 82);
+  font-size: 24px;
+  line-height: 30px;
+}
+.sec1 > .text > p {
+  max-width: 400px;
+  margin-top: 35px;
+  text-align: center;
+}
+.sec1 > .text > a {
+  background-color: rgb(195, 25, 82);
+  color: rgb(255, 253, 158);
+}
+
+.sec2 {
+  width: 100%; height: 100vh;
+  background-color: rgb(204, 246, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.sec2 > .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 107, 108);
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+.sec2 > .text > h2 {
+  font-size: 3.2rem;
+}
+.sec2 > .text > p {
+  max-width: 380px;
+}
+.sec2 > .text > a {
+  background-color: rgb(0, 107, 108);
+  color: rgb(204, 246, 238);
+}
+.sec2 > .photo2 {
+width: 50%; height: 1000px;
+position: relative;
+max-width: 799px;
+min-width: 799px;
+min-height: 700px;
+}
+
+.photo2 > .img1 {
+  width: 476px;
+  height: 438px;
+  overflow: hidden;
+  position: absolute;
+  top: 170px;
+  margin: 0;
+
+}
+.photo2 div:not(.img1_123) figure a {
+  position: relative;
+}
+.photo2 > div > figure > a > img {
+  width: 100%; height: 100%;
+}
+.img1 > figure > a > figcaption {
+  position: absolute;
+  color: #fff;
+  font-size: 3.6rem;
+  padding: 30px;
+  bottom: 100px;
+
+}
+.img1_123 {
+  position: absolute;
+  bottom: 287px;
+  left: -79px;
+  scale: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img1_123 img {
+  margin-right: 15px;
+}
+
+.photo2 .img2 {
+  width: 287px; height: 287px;
+  overflow: hidden;
+  position: absolute;
+  top: 170px;
+  right: 67px;
+  margin: 0;
+}
+
+.img2 > figure > a > figcaption {
+  position: absolute;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 10px;
+  bottom: 16px;
+  left: 6px;
+}
+.photo2 .img3 {
+  width: 230px; height: 230px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 286px;
+  right: 141px;
+  margin: 0;
+}
+
+.img3 > figure > a > figcaption {
+  position: absolute;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    top: -38px;
+    left: 6px;
+}
+
+.photo2 .img4 {
+  width: 295px;
+  height: 295px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 60px;
+  left: 157px;
+  margin: 0;
+}
+
+.img4 > figure > a > figcaption {
+  position: absolute;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 17px;
+  top: -102px;
+  left: 6px;
+}
+
+.photo2 .img5 {
+  width: 295px;
+  height: 295px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  right: 88px;
+}
+
+.img5> figure > a > figcaption {
+  position: absolute;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 21px;
+  top: -121px;
+  left: 1px;
+}
+
+.sec3 {
+  width: 100%; height: 100vh;
+  background-color: rgb(255, 223, 233);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.sec3 > .backimg {
+  width: 50%;
+  height: 100vh;
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+
+}
+.backimg > img {
+  width: 100%; height: 100vh;
+  object-fit: cover;
+
+}
+.follow {
+  position: absolute;
+  left: 79px;
+  bottom: 145px;
+  width: 215px; height: 383px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.follow >img:nth-child(1) {
+  object-fit: cover;
+  width: 100%; height: 100%;
+  border-radius: 25px;
+}
+.cir{
+  position: absolute;
+  z-index: 5;
+  width: 96px; height: 96px;
+  bottom: -30px;
+  left: -30px;
+  overflow: auto;
+}
+
+.sec3 > .text {
+  width: 50%;
+  min-width: 600px;
+  color: rgb(195, 47, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+.sec3 > .text > *:not(a) {
+  padding: 0px 172px;
+  min-width: 450px;
+}
+.follow > p {
+  position: absolute;
+  color: #fff;
+  max-width: 123px;
+  bottom: -62px;
+  right: 34px;
+  text-align: right;
+}
+.bold {
+  font-weight: bold;
+}
+.sec3 > .text > a {
+  background-color: rgb(195, 47, 0);
+  color: rgb(255, 223, 233); }
+
